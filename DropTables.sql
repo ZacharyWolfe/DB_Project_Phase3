@@ -1,0 +1,27 @@
+-- Drops all the data from each table as mentioned in the instruction from the handout
+
+DROP ORDER;
+
+DROP DINE_IN;
+
+DROP DELIVERY;
+
+DROP PICKUP;
+
+DROP SEATS;
+
+DROP CUSTOMER;
+
+DROP ORDER_DISCOUNT;
+
+DROP DISCOUNT;
+
+DROP PIZZA_DISCOUNT;
+
+DROP PIZZA;
+
+DROP BASE_PRICE;
+
+DROP TOPPINGS;
+
+DROP HAS_TOPPING;

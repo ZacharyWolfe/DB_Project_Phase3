@@ -1,0 +1,29 @@
+-- Selects all the data from each table as mentioned in the instructions from the handout
+-- Zachary Wolfe
+-- Matt Taylor
+
+SELECT * FROM ORDER;
+
+SELECT * FROM DINE_IN;
+
+SELECT * FROM DELIVERY;
+
+SELECT * FROM PICKUP;
+
+SELECT * FROM SEATS;
+
+SELECT * FROM CUSTOMER;
+
+SELECT * FROM ORDER_DISCOUNT;
+
+SELECT * FROM DISCOUNT;
+
+SELECT * FROM PIZZA_DISCOUNT;
+
+SELECT * FROM PIZZA;
+
+SELECT * FROM BASE_PRICE;
+
+SELECT * FROM TOPPINGS;
+
+SELECT * FROM HAS_TOPPING;
