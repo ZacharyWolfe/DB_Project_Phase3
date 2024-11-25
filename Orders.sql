@@ -102,7 +102,7 @@ VALUES
   -- Order 5
   ('Pepperoni', 5, FALSE), ('Sausage', 5, FALSE),
   ('Ham', 6, TRUE), ('Pineapple', 6, TRUE),
-  ('Jalapeno', 7, FALSE), ('Bacon', 7, FALSE),
+  ('Jalapenos', 7, FALSE), ('Bacon', 7, FALSE),
 
   -- Order 6
   ('Green Pepper', 8, FALSE), ('Onion', 8, FALSE), ('Roma Tomato', 8, FALSE),
