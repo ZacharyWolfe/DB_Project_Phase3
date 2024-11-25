@@ -33,9 +33,11 @@ VALUES
 -- Seats
 INSERT INTO SEATS (SEAT_ID, SEAT_NUMBER)
 VALUES
-  (1, 1), (2, 2), (3, 3),
-  (4, 1),
-  (5, 2);
+  (1, 1),
+  (1, 2),
+  (1, 3),
+  (2, 1),
+  (3, 2); 
 
 -- Delivery order data
 INSERT INTO DELIVERY (DELIVERY_ID)
