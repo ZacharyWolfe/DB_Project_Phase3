@@ -37,7 +37,7 @@ VALUES
   ('X-Large' , 'Pan'          , 11.50 , 4.50),
   ('X-Large' , 'Gluten-Free'  , 12.50 , 6.00);
 
-INSERT INTO TOPPINGS (TOPPING_NAME, PRICE, BUSINESS_COST, INVENTORY_LEVEL, AMOUNT_XLarge, AMOUNT_Large, AMOUNT_Medium, AMOUNT_Small)
+INSERT INTO TOPPINGS (TOPPING_NAME, PRICE, BUSINESS_COST, INVENTORY_LEVEL, AMOUNT_Small, AMOUNT_Medium, AMOUNT_Large, AMOUNT_XLarge)
 VALUES
   ('Pepperoni'         , 1.25 , 0.20  , 100 , 2.00  , 2.75  , 3.50  , 4.50),
   ('Sausage'           , 1.25 , 0.15  , 100 , 2.50  , 3.00  , 3.50  , 4.25),
