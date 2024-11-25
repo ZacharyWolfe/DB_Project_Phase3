@@ -118,11 +118,13 @@ VALUES
 -- Discounts
 INSERT INTO ORDER_DISCOUNT (ORDER_DISCOUNT_ID, DISCOUNT_ID)
 VALUES
-  (1, 2), -- Lunch special large
-  (2, 1), -- Lunch special medium
-  (3, 4), -- Specialty pizza
-  (4, 5), -- Game-day special
+  (1, 5), -- Game-day special
+  (2, 1); -- Employee discount
+
+INSERT INTO PIZZA_DISCOUNT (PIZZA_ID, DISCOUNT_ID)
+VALUES
+  (3, 2), -- Lunch special large
+  (4, 1), -- Lunch special medium
   (5, 4), -- Specialty pizza
   (6, 4), -- Specialty pizza
-  (7, 1); -- Employee discount
-
+  (7, 4), -- Specialty pizza
