@@ -127,4 +127,4 @@ VALUES
   (4, 1), -- Lunch special medium
   (5, 4), -- Specialty pizza
   (6, 4), -- Specialty pizza
-  (7, 4), -- Specialty pizza
+  (7, 4); -- Specialty pizza
