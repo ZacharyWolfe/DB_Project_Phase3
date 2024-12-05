@@ -67,6 +67,11 @@ VALUES
 
   -- Order 4
   (4, 'Original', 10.75, 'Large', 3.30, 'Completed', '2024-03-03 21:30:00', 4),
+  (41, 'Original', 10.75, 'Large', 3.30, 'Completed', '2024-03-03 21:30:00', 4),
+  (42, 'Original', 10.75, 'Large', 3.30, 'Completed', '2024-03-03 21:30:00', 4),
+  (43, 'Original', 10.75, 'Large', 3.30, 'Completed', '2024-03-03 21:30:00', 4),
+  (44, 'Original', 10.75, 'Large', 3.30, 'Completed', '2024-03-03 21:30:00', 4),
+  (45, 'Original', 10.75, 'Large', 3.30, 'Completed', '2024-03-03 21:30:00', 4),
 
   -- Order 5
   (5, 'Original', 14.50, 'X-Large', 5.59, 'Completed', '2024-03-05 19:11:00', 5),
@@ -98,6 +103,11 @@ VALUES
 
   -- Order 4
   ('Regular Cheese', 4, FALSE), ('Pepperoni', 4, FALSE),
+  ('Regular Cheese', 41, FALSE), ('Pepperoni', 41, FALSE),
+  ('Regular Cheese', 42, FALSE), ('Pepperoni', 42, FALSE),
+  ('Regular Cheese', 43, FALSE), ('Pepperoni', 43, FALSE),
+  ('Regular Cheese', 44, FALSE), ('Pepperoni', 44, FALSE),
+  ('Regular Cheese', 45, FALSE), ('Pepperoni', 45, FALSE),
 
   -- Order 5
   ('Pepperoni', 5, FALSE), ('Sausage', 5, FALSE),
