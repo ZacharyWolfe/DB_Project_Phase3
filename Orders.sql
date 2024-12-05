@@ -54,18 +54,19 @@ VALUES
 
 
 -- Pizza data from orders
-INSERT INTO PIZZA (PIZZA_ID, CRUST_TYPE, PRICE, PIZZA_SIZE, BUSINESS_COST, PIZZA_STATUS, TIME_STAMP, ORDER_ID)
+INSERT INTO PIZZA (PIZZA_ID, CRUST_TYPE, PRICE, BASE_SIZE, BUSINESS_COST, PIZZA_STATUS, TIME_STAMP, ORDER_ID)
 VALUES
   -- Order 1
-  (1, 'Thin', 13.50, 'Large', 3.68, 'Completed', '2024-03-05 12:03:00', 1),
+  (1, 'Large', 13.50, 'Thin', 3.68, 'Completed', '2024-03-05 12:03:00', 1),
 
   -- Order 2
-  (2, 'Pan', 10.60, 'Medium', 3.23, 'Completed', '2024-03-03 12:05:00', 2),
+  (2, 'Medium', 10.60, 'Pan', 3.23, 'Completed', '2024-03-03 12:05:00', 2),
 
   -- Order 3
-  (3, 'Original', 6.75, 'Small', 1.40, 'Completed', '2024-03-03 12:05:00', 3),
+  (3, 'Small', 6.75, 'Original', 1.40, 'Completed', '2024-03-03 12:05:00', 3),
 
   -- Order 4
+  (4, 'Large', 10.75, 'Original', 3.30, 'Completed', '2024-03-03 21:30:00', 4),
   (4, 'Original', 10.75, 'Large', 3.30, 'Completed', '2024-03-03 21:30:00', 4),
   (41, 'Original', 10.75, 'Large', 3.30, 'Completed', '2024-03-03 21:30:00', 4),
   (42, 'Original', 10.75, 'Large', 3.30, 'Completed', '2024-03-03 21:30:00', 4),
@@ -74,19 +75,19 @@ VALUES
   (45, 'Original', 10.75, 'Large', 3.30, 'Completed', '2024-03-03 21:30:00', 4),
 
   -- Order 5
-  (5, 'Original', 14.50, 'X-Large', 5.59, 'Completed', '2024-03-05 19:11:00', 5),
-  (6, 'Original', 17.00, 'X-Large', 5.59, 'Completed', '2024-03-05 19:11:00', 5),
-  (7, 'Original', 14.00, 'X-Large', 5.68, 'Completed', '2024-03-05 19:11:00', 5),
+  (5, 'X-Large', 14.50, 'Original', 5.59, 'Completed', '2024-03-05 19:11:00', 5),
+  (6, 'X-Large', 17.00, 'Original', 5.59, 'Completed', '2024-03-05 19:11:00', 5),
+  (7, 'X-Large', 14.00, 'Original', 5.68, 'Completed', '2024-03-05 19:11:00', 5),
 
   -- Order 6
-  (8, 'Gluten-Free', 16.85, 'X-Large', 7.85, 'Completed', '2024-03-02 17:30:00', 6),
+  (8, 'X-Large', 16.85, 'Gluten-Free', 7.85, 'Completed', '2024-03-02 17:30:00', 6),
 
   -- Order 7
-  (9, 'Thin', 13.25, 'Large', 3.20, 'Completed', '2024-03-02 18:17:00', 7),
+  (9, 'Large', 13.25, 'Thin', 3.20, 'Completed', '2024-03-02 18:17:00', 7),
 
   -- Order 8
-  (10, 'Thin', 12.00, 'Large', 3.75, 'Completed', '2024-03-06 20:32:00', 8),
-  (11, 'Thin', 12.00, 'Large', 2.55, 'Completed', '2024-03-06 20:32:00', 8);
+  (10, 'Large', 12.00, 'Thin', 3.75, 'Completed', '2024-03-06 20:32:00', 8),
+  (11, 'Large', 12.00, 'Thin', 2.55, 'Completed', '2024-03-06 20:32:00', 8);
 
 -- Topping data
 INSERT INTO HAS_TOPPING (TOPPING_NAME, PIZZA_ID, REQUIRES_DOUBLE)
@@ -95,7 +96,7 @@ VALUES
   ('Regular Cheese', 1, TRUE), ('Pepperoni', 1, FALSE), ('Sausage', 1, FALSE),
 
   -- Order 2
-  ('Feta Cheese', 2, FALSE), ('Black Olives', 2, FALSE), ('Roma Tomatoes', 2, FALSE),
+  ('Feta Cheese', 2, FALSE), ('Black Olives', 2, FALSE), ('Roma Tomato', 2, FALSE),
   ('Mushrooms', 2, FALSE), ('Banana Peppers', 2, FALSE),
 
   -- Order 3
@@ -112,10 +113,10 @@ VALUES
   -- Order 5
   ('Pepperoni', 5, FALSE), ('Sausage', 5, FALSE),
   ('Ham', 6, TRUE), ('Pineapple', 6, TRUE),
-  ('Jalapeno', 7, FALSE), ('Bacon', 7, FALSE),
+  ('Jalapenos', 7, FALSE), ('Bacon', 7, FALSE),
 
   -- Order 6
-  ('Green Pepper', 8, FALSE), ('Onion', 8, FALSE), ('Roma Tomatoes', 8, FALSE),
+  ('Green Pepper', 8, FALSE), ('Onion', 8, FALSE), ('Roma Tomato', 8, FALSE),
   ('Mushrooms', 8, FALSE), ('Black Olives', 8, FALSE),
 
   -- Order 7
@@ -128,11 +129,13 @@ VALUES
 -- Discounts
 INSERT INTO ORDER_DISCOUNT (ORDER_DISCOUNT_ID, DISCOUNT_ID)
 VALUES
-  (1, 2), -- Lunch special large
-  (2, 1), -- Lunch special medium
-  (3, 4), -- Specialty pizza
-  (4, 5), -- Game-day special
+  (1, 5), -- Game-day special
+  (2, 1); -- Employee discount
+
+INSERT INTO PIZZA_DISCOUNT (PIZZA_ID, DISCOUNT_ID)
+VALUES
+  (3, 2), -- Lunch special large
+  (4, 1), -- Lunch special medium
   (5, 4), -- Specialty pizza
   (6, 4), -- Specialty pizza
-  (7, 1); -- Employee discount
-
+  (7, 4); -- Specialty pizza
