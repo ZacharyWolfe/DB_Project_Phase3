@@ -67,7 +67,6 @@ VALUES
 
   -- Order 4
   (4, 'Large', 10.75, 'Original', 3.30, 'Completed', '2024-03-03 21:30:00', 4),
-  (4, 'Original', 10.75, 'Large', 3.30, 'Completed', '2024-03-03 21:30:00', 4),
   (41, 'Original', 10.75, 'Large', 3.30, 'Completed', '2024-03-03 21:30:00', 4),
   (42, 'Original', 10.75, 'Large', 3.30, 'Completed', '2024-03-03 21:30:00', 4),
   (43, 'Original', 10.75, 'Large', 3.30, 'Completed', '2024-03-03 21:30:00', 4),
